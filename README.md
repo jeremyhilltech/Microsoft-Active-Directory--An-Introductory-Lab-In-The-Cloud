@@ -18,17 +18,37 @@ This tutorial outlines the prerequisites and installation of Microsoft Active Di
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10 Pro</b> (22H2)
+- Windows Server 2022 Datacenter: Azure Edition</b> 
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Tenant/Subscription to Microsoft Azure
+- Ability to use MS Remote Desktop or Windows App (on Mac) to log into a Virtual Machine.
 
-<h2>Installation Steps</h2>
+---
+
+<h2>TABLE OF CONTENTS</h2>
+
+  ## Overview: What Is Active Directory?
+
+  ## What Will We Accomplish?
+
+  ## Important Notes
+
+  ## Preparing AD Infrastructure in Azure
+
+  ## Deploying Active Directory
+
+  ## Creating Users with PowerShell
+
+  ## Group Policy and Managing Accounts
+
+---
+
+
+
+<h2>OVERVIEW: WHAT IS ACTIVE DIRECTORY?</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
