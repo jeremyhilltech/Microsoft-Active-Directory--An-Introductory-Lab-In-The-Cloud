@@ -3,7 +3,7 @@
 </p>
 
 <h1>Microsoft Active Directory Laboratory</h1>
-This tutorial outlines the prerequisites and installation of Microsoft Active Directory.<br />
+This tutorial outlines the prerequisites, installation, and basic setup of Microsoft Active Directory.<br />
 
 
 <h2>Video Demonstration</h2>
