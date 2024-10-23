@@ -13,7 +13,8 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+- Active Directory Domain Services
+- PowerShell
 
 <h2>Operating Systems Used </h2>
 
