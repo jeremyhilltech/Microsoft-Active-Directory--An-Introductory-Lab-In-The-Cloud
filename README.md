@@ -166,7 +166,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 <img src="https://i.imgur.com/p6imHHp.png" alt="AD Desktop"/>
 </p>
 
-* Disable Windows Firewall on DC-1. (Server Manager will probably open, you can minimize it.)
+* Disable Windows Firewall on DC-1. (Server Manager will probably open, you can minimize it.) Once logged in, type wf.msc in the search bar and hit enter to open the firewall service window and disable the firewall. 
 
 <p align="center">
 <img src="https://i.imgur.com/nbw9yaL.png" alt="AD Desktop"/>
