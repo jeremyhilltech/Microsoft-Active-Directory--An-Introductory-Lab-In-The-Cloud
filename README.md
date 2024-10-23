@@ -191,10 +191,11 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 </p>
 
 2. Attach this machine to the same region and virtual network as DC-1. 
-	* After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+* After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+* Obtain DC-1's Private IP address by clicking on DC-1 from your Virtual Machines list.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/8KmZpGm.png" alt="AD Desktop"/>
 </p>
 
 3.  In Azure: 
