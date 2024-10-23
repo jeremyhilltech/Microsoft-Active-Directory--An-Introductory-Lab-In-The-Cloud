@@ -180,18 +180,19 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 1. Create the Client VM (Windows 10) named “Client-1." Create the VM using all of the same parameters as DC-1, with the exception that we will be installing a Windows 10 Pro image on this machine. 
 
-	* Create the VM using all of the same parameters as before, except:
-	* Name this VM "Client-1"
-	* Install a Windows 10 image on this machine.
-	* Admin Credentials can be identical to DC-1 or you can change them to whatever you like. 
-	* At the end of the Basics section, select the box confirming eligible Windows 10/11 license. 
+* Create the VM using all of the same parameters as before, except:
+* Name this VM "Client-1"
+* Install a Windows 10 image on this machine.
+* Admin Credentials can be identical to DC-1 or you can change them to whatever you like. 
+* At the end of the Basics section, select the box confirming eligible Windows 10/11 license. 
 
 <p align="center">
 <img src="https://i.imgur.com/jS0f4Nr.png" alt="AD Desktop"/>
 </p>
 
-2. Attach this machine to the same region and virtual network as DC-1. 
-* After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+* Attach this machine to the same region and virtual network as DC-1. 
+
+2. After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
 * Obtain DC-1's Private IP address by clicking on DC-1 from your Virtual Machines list.
 
 <p align="center">
