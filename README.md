@@ -190,10 +190,12 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 <img src="https://i.imgur.com/jS0f4Nr.png" alt="AD Desktop"/>
 </p>
 
-* Attach this machine to the same region and virtual network as DC-1. 
+* On the Network blade attach this machine to the same region and virtual network as DC-1, then create the VM. 
 
-2. After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+2. After Client-1 is created, set its DNS server to DC-1’s Private IP address
 * Obtain DC-1's Private IP address by clicking on DC-1 from your Virtual Machines list.
+* Once obtained, navigate to Client-1 virtual machine, select Network Settings, then select the NIC like we did earlier on DC-1.
+* From here, select DNS Servers on the left, select Custom, enter DC-1's private IP address, and then save at the top. You have no assigned DC-1 as the Client-1's DNS server. 
 
 <p align="center">
 <img src="https://i.imgur.com/8KmZpGm.png" alt="AD Desktop"/>
