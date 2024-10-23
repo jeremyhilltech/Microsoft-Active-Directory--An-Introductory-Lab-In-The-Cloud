@@ -218,35 +218,33 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 * Log into Client-1 via RDP (Windows App/Remote Desktop) just like we did with DC-1, remember to use Client-1's public IP address and whatever credentials you set up specfically for this machine. 
 
-<p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
-</p>
-
 4. Set up Client-1 and attempt to ping DC-1’s private IP address
 * After startup, turn off all privacy settings and then accept. 
 * Click "yes" to allow device to be discovered on the network (popup on the right side).
 * If Edge starts up, click continue > start without your data > uncheck box > confirm and continue > uncheck box, confirm and start browsing, select appearance you prefer, select next, and finish. Do not worry if Edge fails to open a web page, it's because of how our DNS is routed to DC-1. 
-* Open the command line by typing cmd in the bottom left search bar, then attempt to ping DC-1 at it's private IP address: 
+* Open PowerShell by right-clicking the Start button and selecting PowerShell, open it, then attempt to ping DC-1 at it's private IP address: 
 
 <p align="center">
-<img src="https://i.imgur.com/f86KAhO.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/pSZxTqB.png" alt="AD Desktop"/>
 </p>
 
+* You should see a successful ping operation, this verifies that our connection to DC-1 is good. 
+
 <p align="center">
-<img src="https://i.imgur.com/f86KAhO.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/B9jB2Ag.png" alt="AD Desktop"/>
 </p>
 
-* Ensure ping has succeeded. If not, you may not have provisioned your virtual networks correctly in Azure for the VM's, or you have not completely disabled the Firewall on DC-1.
+* Ensure ping has succeeded. If not, you may have provisioned your virtual networks incorrectly in Azure for the VM's, or you have not completely disabled the Firewall on DC-1. You may want to disable all firewalls on each tab of the Windows Defender Firewall Properties if your pings are failing. Disable all firewall settings for the Domain, Private, and Public tabs. Please note that this is for lab purposes only, we would leave these intact and do additional configuring if this were an operational AD instance. Your ping operation should be working. If not, check which Virtual Networks you VM's are on inside Azure. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/zErirYa.png" alt="AD Desktop"/>
 </p>
 
 5. From Client-1, open PowerShell as Admin and run ipconfig /all
 	* The output for the DNS settings should show DC-1’s *private* IP Address
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/BRMyr0C.png" alt="AD Desktop"/>
 </p>
 
 ---
