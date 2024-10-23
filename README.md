@@ -27,9 +27,9 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 
 ---
 
-<h2>TABLE OF CONTENTS</h2>
+## TABLE OF CONTENTS
 
-- [Overview: What Is Active Directory?](#overview-what-is-active-directory)
+- [Overview: What Is Active Directory](#overview-what-is-active-directory)
 - [What Will We Accomplish?](#what-will-we-accomplish)
 - [Important Notes](#important-notes)
 - [Preparing AD Infrastructure in Azure](#preparing-ad-infrastructure-in-azure)
@@ -37,7 +37,6 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 - [Creating Users with PowerShell](#creating-users-with-powershell)
 - [Group Policy and Managing Accounts](#group-policy-and-managing-accounts)
 
-  
 ---
 
 # Overview: What Is Active Directory?
