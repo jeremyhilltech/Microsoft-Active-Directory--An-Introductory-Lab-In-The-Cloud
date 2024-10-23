@@ -210,15 +210,33 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 </p>
 
 3.  In Azure: 
-	* Restart Client-1
-	* Log into Client-1 via RDP (Windows App/Remote Desktop)
+* Restart Client-1
+
+<p align="center">
+<img src="https://i.imgur.com/r896q2a.png" alt="AD Desktop"/>
+</p>
+
+* Log into Client-1 via RDP (Windows App/Remote Desktop) just like we did with DC-1, remember to use Client-1's public IP address and whatever credentials you set up specfically for this machine. 
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
 </p>
 
-4. Attempt to ping DC-1’s private IP address
-	* Ensure ping has succeeded. If not, you may not have provisioned your virtual networks correctly in Azure for the VM's, or you have not completely disabled the Firewall on DC-1.
+4. Set up Client-1 and attempt to ping DC-1’s private IP address
+* After startup, turn off all privacy settings and then accept. 
+* Click "yes" to allow device to be discovered on the network (popup on the right side).
+* If Edge starts up, click continue > start without your data > uncheck box > confirm and continue > uncheck box, confirm and start browsing, select appearance you prefer, select next, and finish. Do not worry if Edge fails to open a web page, it's because of how our DNS is routed to DC-1. 
+* Open the command line by typing cmd in the bottom left search bar, then attempt to ping DC-1 at it's private IP address: 
+
+<p align="center">
+<img src="https://i.imgur.com/f86KAhO.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/f86KAhO.png" alt="AD Desktop"/>
+</p>
+
+* Ensure ping has succeeded. If not, you may not have provisioned your virtual networks correctly in Azure for the VM's, or you have not completely disabled the Firewall on DC-1.
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
