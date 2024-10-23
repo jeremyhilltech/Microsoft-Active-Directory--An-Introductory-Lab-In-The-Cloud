@@ -201,6 +201,14 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 <img src="https://i.imgur.com/8KmZpGm.png" alt="AD Desktop"/>
 </p>
 
+<p align="center">
+<img src="https://i.imgur.com/pBSH81P.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/mlYLEDO.png" alt="AD Desktop"/>
+</p>
+
 3.  In Azure: 
 	* Restart Client-1
 	* Log into Client-1 via RDP (Windows App/Remote Desktop)
