@@ -178,12 +178,16 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 ## 2. Create Windows 10 Client VM (Client-1)
 
-1. Create the Client VM (Windows 10) named “Client-1”
-	* Username: labuser (or something you will remember)
-	* Password: Cyberlab123! (or something you will remember)
+1. Create the Client VM (Windows 10) named “Client-1." Create the VM using all of the same parameters as DC-1, with the exception that we will be installing a Windows 10 Pro image on this machine. 
+
+	* Create the VM using all of the same parameters as before, except:
+	* Name this VM "Client-1"
+	* Install a Windows 10 image on this machine.
+	* Admin Credentials can be identical to DC-1 or you can change them to whatever you like. 
+	* At the end of the Basics section, select the box confirming eligible Windows 10/11 license. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/jS0f4Nr.png" alt="AD Desktop"/>
 </p>
 
 2. Attach this machine to the same region and virtual network as DC-1. 
