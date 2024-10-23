@@ -3,12 +3,15 @@
 </p>
 
 <h1>Microsoft Active Directory Laboratory</h1>
-This tutorial outlines the prerequisites, installation, and basic setup of Microsoft Active Directory.<br />
+This tutorial outlines the prerequisites, installation, basic setup, and management of users in Microsoft Active Directory.<br />
 
+<p align="center">
+<img src="https://imgur.com/h1FcCWh.png" alt="AD logo"/>
+</p>
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+- ### [YouTube: How To Deploy On-premises Active Directory Within Azure Compute](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
