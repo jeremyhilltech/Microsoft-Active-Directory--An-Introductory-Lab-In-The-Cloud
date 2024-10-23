@@ -29,17 +29,18 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 
 <h2>TABLE OF CONTENTS</h2>
 
-  ## Overview: What Is Active Directory?  
-  ## What Will We Accomplish?  
-  ## Important Notes  
-  ## Preparing AD Infrastructure in Azure  
-  ## Deploying Active Directory  
-  ## Creating Users with PowerShell  
-  ## Group Policy and Managing Accounts  
+- [Overview: What Is Active Directory?](#overview-what-is-active-directory)
+- [What Will We Accomplish?](#what-will-we-accomplish)
+- [Important Notes](#important-notes)
+- [Preparing AD Infrastructure in Azure](#preparing-ad-infrastructure-in-azure)
+- [Deploying Active Directory](#deploying-active-directory)
+- [Creating Users with PowerShell](#creating-users-with-powershell)
+- [Group Policy and Managing Accounts](#group-policy-and-managing-accounts)
+
   
 ---
 
-# OVERVIEW: WHAT IS ACTIVE DIRECTORY?
+# Overview: What Is Active Directory?
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
@@ -49,13 +50,13 @@ Active Directory is a directory service created by Microsoft that gives organiza
 
 ---
 
-# WHAT WILL WE ACCOMPLISH?
+# What Will We Accomplish?
 
 In this lab, we are going to stand up an instance of Active Directory using two virtual machines in Microsoft's cloud platform, Azure. The first VM will be our domain controller, which is a server that will be running Windows Server 2022. The second VM will be a client computer which we will register to the domain created by the domain controller. Once this is done, we'll do some additional configuring of our domain controller, and then create a large batch of users in our organization using the PowerShell command line interface. Finally, with our users created, we have a "company" to work with, and we'll create Group Policy and manage user accounts to simulate a simplified version of how Active Directory would be deployed in a real-life organization. 
 
 ---
 
-# IMPORTANT NOTES: 
+# Important Notes
 
 Information here is current as of October of 2024. Azure and Active Directory are constantly changing and being updated by Microsoft. This tutorial is not evergreen, and changes will be made to these platforms which inevitably will not be reflected in the documentation below. You should still be able to generally work out where and how to perform the illustrated functions with help from other resources such as AI, YouTUbe, vendor support, etc. 
 
@@ -72,7 +73,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 ---
 
-# PREPARING AD INFRASTRUCTURE IN AZURE
+# Preparing AD Infrastructure in Azure
 
 ## 1. Create Windows Server Domain Controller VM (DC-1)
 
@@ -143,7 +144,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 ---
 
-# DEPLOYING ACTIVE DIRECTORY
+# Deploying Active Directory
 
 ## 1. Install Active Directory
 
@@ -258,7 +259,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 ---
 
-# CREATING USERS WITH POWERSHELL
+# Creating Users with PowerShell
 
 1. Login to DC-1 as jane_admin
 
@@ -298,7 +299,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 ---
 
-# GROUP POLICY AND MANAGING ACCOUNTS
+# Group Policy and Managing Accounts
 
 # 1. Configure Account Lockout Threshold in Group Policy
 
