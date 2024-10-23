@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://imgur.com/h1FcCWh.png" alt="AD logo"/>
+<img src="https://camo.githubusercontent.com/e38ed1b3f8f0cff62ee2117afc871396adea4a1266dbebb482b5080db92184af/68747470733a2f2f692e696d6775722e636f6d2f705535413538532e706e67" alt="AD logo"/>
 </p>
 
 <h1>Microsoft Active Directory Laboratory</h1>
