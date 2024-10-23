@@ -60,7 +60,7 @@ In this lab, we are going to stand up an instance of Active Directory using two 
 
 Information here is current as of October of 2024. Azure and Active Directory are constantly changing and being updated by Microsoft. This tutorial is not evergreen, and changes will be made to these platforms which inevitably will not be reflected in the documentation below. You should still be able to generally work out where and how to perform the illustrated functions with help from other resources such as AI, YouTube, vendor support, etc. 
 
-This tutorial does not cover how to use Azure to create a tenant (organization) or subscription. It also assumes that you are familiar with how to use Remote Desktop or the Windows App to log into a VM created in Azure. If you do not know how to do this, YouTube has many great resources that will walk you through the process. 
+This tutorial does not cover how to use Azure to create an account, tenant (organization), subscription, or log into Azure. It also assumes that you are familiar with how to use Remote Desktop or the Windows App to log into a VM created in Azure. If you do not know how to do this, YouTube has many great resources that will walk you through the process. 
 
 There is almost no difference in doing this on a Windows or Mac with the exception that Mac users will have to download the Windows App from the App Store to log into their VM's. Windows users will use Remote Desktop as normal. 
 
@@ -79,30 +79,101 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 ## 1. Create Windows Server Domain Controller VM (DC-1)
 
-1. Create a Resource Group and name it "Active_Directory"
+1. Log into your Azure account and navigate to Resource Groups in Azure and create a Resource Group named "Active_Directory." Note the region you are selecting, your Virtual Network and VM's will be set up in the same region. Once details have been selected, click on "Review + create" and then "Create" once validation passes. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/Z8APBbg.png" alt="AD Desktop"/>
 </p>
 
-2. Create a Virtual Network/Subnet and name it "AD-vnet"
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/NWVb6W8.png" alt="AD Desktop"/>
 </p>
 
-3. Create the Domain Controller VM (Windows Server 2022) named “DC-1”
-	* Username: labuser (or something you will remember)
-	* Password: Cyberlab123! (or something you will remember)
-	* After VM is created, set Domain Controller’s NIC Private IP address to be static
+2. Using the search bar at the top, navigate to Virtual Networks and create a Virtual Network/Subnet and name it "AD-vnet." Again note that you are selecting the correct region, it should be the same as the Resource Group you created. You can expand or limit the IP address range by changing the CIDR notation under the IP Addresses blade before creation if you like, the default will work for this lab, so we'll just create it as-is. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/dQAhYX0.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/6ioLRW0.png" alt="AD Desktop"/>
+</p>
+
+3. Create the Domain Controller VM (Windows Server 2022) named “DC-1." Navigate to Virtual Machines in the top search bar and begin creating the VM. Choose "Azure virtual machine" in the drop down. 
+
+* Select the resource "Active_Directory" from the drop down. 
+* Name the VM to "DC-1"
+* Select the same region as your Resource Group and Virtual Network. 
+* Availabilty Options: No infrastructure redundancy required
+* Security Type: Standard
+* Image: Windows Server 2022 Datacenter: Azure Edition
+
+<p align="center">
+<img src="https://i.imgur.com/DRpZOfx.png" alt="AD Desktop"/>
+</p>
+
+* Size: Recommend at minumum 2vcpus and 16GiB memory, 4 vcpus even better, but either will work. 
+* Administrator Account: Username: labuser (or something you will remember)
+* Password: Cyberlab123! (or something you will remember)
+* Leave RDP port 3389 open so we can log into the VM. 
+* Click next to Disks, and next again to the Network blade. 
+
+<p align="center">
+<img src="https://i.imgur.com/XebbkYo.png" alt="AD Desktop"/>
+</p>
+
+* Select the virtual network we created earlier called "AD-vnet"
+* Review+Create, then Create the Virtual Machine and allow it time to provision. 
+
+ <p align="center">
+<img src="https://i.imgur.com/opzgFEU.png" alt="AD Desktop"/>
+</p>
+
+* After VM is created, set Domain Controller’s NIC Private IP address to be static. Select "Go To Resource" and then the following:
+* Network Settings, then click on the NIC
+* Click on "ipconfig"
+* Next to "Allocation" select the "Static" radio button and save. 
+
+ <p align="center">
+<img src="https://i.imgur.com/QyqU8E7.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/QyqU8E7.png" alt="AD Desktop"/>
 </p>
 
 4. Log into DC-1 via Remote Desktop/Windows App and disable the Windows Firewall (for testing connectivity).
+* Obtain DC-1's Public IP address and copy/paste it into RDP/Windows App.
+* Login with credentials you used when you created the VM in Azure. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/zHvd7d9.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/79srvSp.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/X4tdr6v.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/sjpzITq.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/p6imHHp.png" alt="AD Desktop"/>
+</p>
+
+* Disable Windows Firewall on DC-1. (Server Manager will probably open, you can minimize it.)
+
+<p align="center">
+<img src="https://i.imgur.com/nbw9yaL.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/2Pj0Kj7.png" alt="AD Desktop"/>
 </p>
 
 ## 2. Create Windows 10 Client VM (Client-1)
