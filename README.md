@@ -420,24 +420,22 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 3. Allow “domain users” access to remote desktop
 
-* Type in Domain Users before you click on Check Names. It will underline when it's found the connection, then click OK. 
+* Type in Domain Users before you click on Check Names. It will underline when it's found the connection, then click OK and OK again to add them in. 
 
 <p align="center">
 <img src="https://i.imgur.com/4xU6SlV.png" alt="AD Desktop"/>
 </p>
 
 4. You can now log into Client-1 as a normal, non-administrative user now
-	* Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
-
-<p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
-</p>
+	* Normally you’d want to do this with Group Policy that allows you to change MANY systems at once. We will look at this later in the lab.
 
 ---
 
 # Creating Users with PowerShell
 
-1. Login to DC-1 as jane_admin
+* Now that we have created these permissions for users, it's time to make some! Let's get started. 
+
+1. If you haven't already, login to DC-1 as jane_admin
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
