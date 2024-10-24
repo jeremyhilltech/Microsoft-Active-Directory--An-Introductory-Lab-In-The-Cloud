@@ -341,13 +341,24 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 </p>
 
 <p align="center">
-<img src="https://i.imgur.com/0R7BPvP.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/oqrgZLt.png" alt="AD Desktop"/>
 </p>
 
+<p align="center">
+<img src="https://i.imgur.com/pnSeUfs.png" alt="AD Desktop"/>
+</p>
+
+* Click finish
+
 4. Add jane_admin to the “Domain Admins” Security Group
+*Jane is not yet an admin, we must assign her to built-in domain admins security group. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/e19FdPo.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/jwBmniU.png" alt="AD Desktop"/>
 </p>
 
 5. Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
