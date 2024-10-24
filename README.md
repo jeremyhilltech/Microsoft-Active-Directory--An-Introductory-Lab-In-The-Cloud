@@ -375,21 +375,31 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 ## 3. Join Client-1 to your domain (mydomain.com)
 
 1. Login to Client-1 as the original local admin (labuser) and join it to the domain (computer will restart)
+* Right click the start button and go to System:
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/fJDi6jn.png" alt="AD Desktop"/>
 </p>
+
+* Click Rename this PC (Advanced) > Change > enter "mydomain.com" and click OK > enter jane_admin's credentials and click OK.
+
+<p align="center">
+<img src="https://i.imgur.com/2DfaFwR.png" alt="AD Desktop"/>
+</p>
+
+* Click OK on all windows and follow the prompts to restart after the Welcome to the domain message. 
 
 2. Login to the Domain Controller and verify Client-1 shows up in ADUC
+* If you are already logged into DC-1, reopen Active Directory Users and Computers and then click on the Computers file in the domain, you should Client-1 in there now. If you don't, right click the mydomain.com tab and refresh everything. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/dp2wosd.png" alt="AD Desktop"/>
 </p>
 
-3. Create a new OU named “_CLIENTS” and drag Client-1 into there
+3. Using the same process as earlier, create a new Organizational Unit named “_CLIENTS” and then drag Client-1 into that folder. It should look like this when finished. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/sTQoT4A.png" alt="AD Desktop"/>
 </p>
 
 ## 4. Setup Remote Desktop for non-administrative users on Client-1
