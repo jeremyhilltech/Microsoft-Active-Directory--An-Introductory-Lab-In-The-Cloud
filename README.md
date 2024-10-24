@@ -326,16 +326,22 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 <img src="https://i.imgur.com/kvuedDe.png" alt="AD Desktop"/>
 </p>
 
-2. Create a new OU named “_ADMINS”
+2. Follow the same process to create a new OU named “_ADMINS”
 
 <p align="center">
 <img src="https://i.imgur.com/hOzKS5X.png" alt="AD Desktop"/>
 </p>
 
-3. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
+* Note: The reason for the underscores is that it's a simple way for us to keep track of folders that we have created vs folders present in the system when we started. If you refresh the mydomain.com tab, you'll see the folders populate at the top in alphabetical order before the rest of the system folders. 
+
+3. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / whatever password you want.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/0R7BPvP.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/0R7BPvP.png" alt="AD Desktop"/>
 </p>
 
 4. Add jane_admin to the “Domain Admins” Security Group
