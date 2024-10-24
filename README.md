@@ -43,7 +43,7 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 # Overview: What Is Active Directory?
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/r7TcRxI.png" alt="AD Desktop"/>
 </p>
 
 Active Directory is a directory service created by Microsoft that gives organizations the ability to manage Windows domain networks. Administrators have the ability to manage networks, peripherals, software installations, upgrades, patches, rollbacks, as well as secure these surfaces. In addition, users and their respective groups, devices, and permissions can be managed all from one place, and these changes will be reflected on all nodes which are attached to the domain. It's a powerful tool that creates a cohesive work environment and makes management of large technology needs across an organization easier and more effective. 
@@ -254,9 +254,18 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 ## 1. Install Active Directory
 
 1. Login to DC-1 and install Active Directory Domain Services
+* Open Server Manager from the Start menu
+* At the bottom of server manager, you'll see three windows: File and Storage Services, Local Server, and All Servers. These boxes should have green lines through them, indicating they are online and configured correctly. If you see red, you will need to go into those items and see which services are not running and start them by right-clicking them and selecting Start. After starting these services, the color should update from red to green. Sometimes these server componenents do not automatically start up when Server Manager is loaded and they need to be started manually.
+* Before services running
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+</p>
+
+*After services running
+
+<p align="center">
+<img src="https://i.imgur.com/g7a6K6V.png" alt="AD Desktop"/>
 </p>
 
 2. Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
