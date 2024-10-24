@@ -351,7 +351,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 * Click finish
 
 4. Add jane_admin to the “Domain Admins” Security Group
-*Jane is not yet an admin, we must assign her to built-in domain admins security group. 
+* Jane is not yet an admin, we must assign her to built-in domain admins security group. 
 
 <p align="center">
 <img src="https://i.imgur.com/e19FdPo.png" alt="AD Desktop"/>
@@ -362,15 +362,14 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 </p>
 
 5. Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
+* We'll be using this account from here forward. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/7o8QHff.png" alt="AD Desktop"/>
 </p>
 
-6. User jane_admin as your admin account from now on. 
-
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/KmfL0hM.png" alt="AD Desktop"/>
 </p>
 
 ## 3. Join Client-1 to your domain (mydomain.com)
