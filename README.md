@@ -406,29 +406,27 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 1. Log into Client-1 as mydomain.com\jane_admin
 
-<p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
-</p>
-
-2. Open system properties
+2. Open system properties and go to "Remote Desktop" 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/KUWxAru.png" alt="AD Desktop"/>
 </p>
 
-3. Click “Remote Desktop”
+* Then to "Select User that can remotely access this PC"
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/5mS0XHz.png" alt="AD Desktop"/>
 </p>
 
-4. Allow “domain users” access to remote desktop
+3. Allow “domain users” access to remote desktop
+
+* Type in Domain Users before you click on Check Names. It will underline when it's found the connection, then click OK. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/4xU6SlV.png" alt="AD Desktop"/>
 </p>
 
-5. You can now log into Client-1 as a normal, non-administrative user now
+4. You can now log into Client-1 as a normal, non-administrative user now
 	* Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
 <p align="center">
