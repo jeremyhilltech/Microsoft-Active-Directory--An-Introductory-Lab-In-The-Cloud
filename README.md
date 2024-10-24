@@ -319,13 +319,17 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 1. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/MGvsQzP.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/kvuedDe.png" alt="AD Desktop"/>
 </p>
 
 2. Create a new OU named “_ADMINS”
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/hOzKS5X.png" alt="AD Desktop"/>
 </p>
 
 3. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
