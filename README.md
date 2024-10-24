@@ -268,16 +268,50 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 <img src="https://i.imgur.com/g7a6K6V.png" alt="AD Desktop"/>
 </p>
 
-2. Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+* To install Active Directory, open "Add roles and features," click Next for Role-based Installation, Next again until you arrive at Server Selection. Choose DC-1, click Next, then for Server Roles check the box for Active Directory Domain Service and click Next, click Next through Features, Next through AD DS, Next for confirmation and check the box for allowing restarts at the top, then click Install. You should see the following screens:
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/gPFNxEe.png" alt="AD Desktop"/>
 </p>
 
-3. Restart and then log back into DC-1 as user: mydomain.com\labuser
+<p align="center">
+<img src="https://i.imgur.com/chEBymr.png" alt="AD Desktop"/>
+</p>
+
+2. Promote DC-1 as a Domain Controller: 
+* Set up the new forest as mydomain.com (This can be whatever you want, but for this lab mydomain.com is recommended.)
+* Return to the Server Manager home screen, click on the flag at the top right, and then click on "Promote this server to a domain controller" and follow the steps to configure the Domain Controller. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/2NuCjIH.png" alt="AD Desktop"/>
+</p>
+
+* Set DSRM password to whatever you like that you won't forget
+
+<p align="center">
+<img src="https://i.imgur.com/RjF7RCa.png" alt="AD Desktop"/>
+</p>
+
+*UNcheck box in DNS Options
+
+<p align="center">
+<img src="https://i.imgur.com/lH88rfe.png" alt="AD Desktop"/>
+</p>
+
+* Click Next through everything else until you can install.
+
+<p align="center">
+<img src="https://i.imgur.com/bCkIY6P.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/CpJf1O2.png" alt="AD Desktop"/>
+</p>
+
+3. The Domain Controller should automatically restart and then log back into DC-1 as user: mydomain.com\labuser
+
+<p align="center">
+<img src="https://i.imgur.com/pPCsnXs.png" alt="AD Desktop"/>
 </p>
 
 ## 2. Create a Domain Admin user within the domain. 
