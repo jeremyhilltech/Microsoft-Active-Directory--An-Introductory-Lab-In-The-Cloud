@@ -399,7 +399,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 3. Using the same process as earlier, create a new Organizational Unit named “_CLIENTS” and then drag Client-1 into that folder. It should look like this when finished. 
 
 <p align="center">
-<img src="https://i.imgur.com/sTQoT4A.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/TJUsJzb.png" alt="AD Desktop"/>
 </p>
 
 ## 4. Setup Remote Desktop for non-administrative users on Client-1
