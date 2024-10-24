@@ -427,7 +427,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 </p>
 
 4. You can now log into Client-1 as a normal, non-administrative user now
-	* Normally you’d want to do this with Group Policy that allows you to change MANY systems at once. We will look at this later in the lab.
+* Normally you’d want to do this with Group Policy that allows you to change MANY systems at once. We will look at this later in the lab.
 
 ---
 
