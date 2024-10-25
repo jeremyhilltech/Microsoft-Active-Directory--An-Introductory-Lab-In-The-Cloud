@@ -469,22 +469,35 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 <img src="https://i.imgur.com/tqdnoPe.png" alt="AD Desktop"/>
 </p>
 
-4. Paste and Run the script in Powershell ISE and observe the accounts being created
+4. Paste and Run the script in Powershell ISE and observe 10,000 user accounts being created!
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/6TFtuGs.png" alt="AD Desktop"/>
 </p>
 
-5. When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
+* You will see users being created at the bottom, this will take a few minutes to complete.  
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/Qg5BUvP.png" alt="AD Desktop"/>
 </p>
 
-6. Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+5. When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES). You now see 10,000 user accounts.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/yOLD5rZ.png" alt="AD Desktop"/>
+</p>
+
+6. Attempt to log into Client-1 with one of the accounts (take note of the password in the script, in this case Password1)
+* Back to RD/Windows App, log in with the new user credentials. You now have 10,000 users who can log in via Client-1 on your Active Directory domain! 
+
+<p align="center">
+<img src="https://i.imgur.com/Pd1XlUp.jpeg" alt="AD Desktop"/>
+</p>
+
+* Success! 
+
+<p align="center">
+<img src="https://i.imgur.com/i6KypHv.png" alt="AD Desktop"/>
 </p>
 
 ---
