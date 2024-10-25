@@ -491,13 +491,13 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 * Back to RD/Windows App, log in with the new user credentials. You now have 10,000 users who can log in via Client-1 on your Active Directory domain! 
 
 <p align="center">
-<img src="https://i.imgur.com/Pd1XlUp.jpeg" alt="AD Desktop"/>
+<img src="https://i.imgur.com/i6KypHv.png" alt="AD Desktop"/>
 </p>
 
 * Success! 
 
 <p align="center">
-<img src="https://i.imgur.com/i6KypHv.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/Pd1XlUp.jpeg" alt="AD Desktop"/>
 </p>
 
 ---
