@@ -571,24 +571,24 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
   * If you modified the Default Domain Policy, it will automatically be linked and will take the system 90 minutes to propogate the changes across the domain. See next step to force an update and apply the changes to the domain immediately. 
 
-<p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
-</p>
-
 6. Update Group Policy
 	1. You can wait for the Group Policy to propagate automatically, or you can force an update immediately.
-		* On a client machine or server, open Command Prompt and type gpupdate /force, then press Enter.
+		* On a *client* machine or server, log in as jane_admin, open Command Prompt and type gpupdate /force, then press Enter.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/NZq1wHA.png" alt="AD Desktop"/>
 </p>
 
 7. Verify the Policy
 	1. To verify the policy, you can use the rsop.msc (Resultant Set of Policy) tool on a client machine to see the applied settings.
-	2. Alternatively, you can also check the settings using the Group Policy Management Console.
+	2. Alternatively, you can also check the settings using the Group Policy Management Console, or the command line as Administrator: 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/iC3fWEm.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/I1yELIe.png" alt="AD Desktop"/>
 </p>
 
 *Important Considerations:
