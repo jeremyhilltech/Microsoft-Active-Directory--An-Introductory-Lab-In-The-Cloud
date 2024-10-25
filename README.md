@@ -554,10 +554,22 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 <img src="https://i.imgur.com/vK4p5wK.png" alt="AD Desktop"/>
 </p>
 
-5. Link the GPO to an Organizational Unit (OU)
-	1. Once the GPO is configured, you need to link it to the appropriate Organizational Unit (OU) or domain where you want the policy to apply.
+* Close GPME
+
+5. IF you made a new policy instead of altering the Default Domain Policy, link the GPO to an Organizational Unit (OU)
+	1. Once the GPO is configured, you need to link it to the appropriate Organizational Unit (OU) or domain where you want the policy to apply. (Probably mydomain.com if you named yours the same.)
     	2. In the GPMC, right-click the OU or domain where you want to apply the GPO and select Link an Existing GPO.
     	3. Choose the GPO you created or modified earlier and click OK.
+
+<p align="center">
+<img src="https://i.imgur.com/XBDyOEf.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/DkgTruJ.png" alt="AD Desktop"/>
+</p>
+
+  * If you modified the Default Domain Policy, it will automatically be linked and will take the system 90 minutes to propogate the changes across the domain. See next step to force an update and apply the changes to the domain immediately. 
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
