@@ -691,12 +691,25 @@ By following these steps, you can successfully configure an account lockout poli
 <img src="https://i.imgur.com/30iiJyw.png" alt="AD Desktop"/>
 </p>
 
-2. Observe the logs on the client Machine 
+2. Observe the logs on the client Machine
+* While the user that we are logged in as does not have priveleges to see Security events on this machine, the admin does, and we can login as the admin from inside the Event Viewer.
+* In the search bar type eventvwr.msc and when the program populates in the window above, look to the right and run as Admin.
+* You'll enter the admin credentials for jane_admin and hit enter.
+* You're now in the Event Viewer with full view of all events including the Security events, which will mirror what we saw on DC-1. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/svQZPkU.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/hNGcMQK.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/9cvXXzy.png" alt="AD Desktop"/>
 </p>
 
 ----
 
-Congratulations! Having completed these labs with Active Directory, you have gained valuable hands-on experience with one of the most popular enterprise directory services and user management systems in the world. It's my sincere hope that you found this information helpful. 
+# Closing Comments
+* Congratulations! Having completed these labs with Active Directory, you have gained valuable hands-on experience with one of the most popular enterprise directory services and user management systems in the world. It's my sincere hope that you found this information helpful. 
