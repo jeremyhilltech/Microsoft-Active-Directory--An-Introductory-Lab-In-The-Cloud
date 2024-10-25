@@ -437,17 +437,21 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 
 1. If you haven't already, login to DC-1 as jane_admin
 
+2. Open PowerShell_ise as an administrator by searching Powershell in the search bar and right clicking on Powershell ISE.
+
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/SgQP5vZ.png" alt="AD Desktop"/>
 </p>
 
-2. Open PowerShell_ise as an administrator
+* With Powershell ISE open, click on Script on the top right and you will get a split screen.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/3kLFXGE.png" alt="AD Desktop"/>
 </p>
 
 3. Create a new File and paste the contents of the [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it
+* First, open the link above in a new tab which will take you to the Gothub repository.
+* Next on the top right of the file, click on the double squares to copy the RAW file. 
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
