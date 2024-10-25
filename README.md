@@ -39,7 +39,7 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 
 - [Overview: What Is Active Directory](#overview-what-is-active-directory)
 - [What Will We Accomplish?](#what-will-we-accomplish)
-- [Important Notes](#important-notes-and-how-to-use-this-lab)
+- [Important Notes And How To Use This Lab](#important-notes-and-how-to-use-this-lab)
 - [Preparing AD Infrastructure in Azure](#preparing-ad-infrastructure-in-azure)
 - [Deploying Active Directory](#deploying-active-directory)
 - [Creating Users with PowerShell](#creating-users-with-powershell)
@@ -64,7 +64,7 @@ In this lab, we are going to stand up an instance of Active Directory using two 
 
 ---
 
-# Important Notes and How to Use This Lab
+# Important Notes And How To Use This Lab
 
 You can jump straight to any section of this lab by clicking its corresponding link in the Table of Contents above. 
 
