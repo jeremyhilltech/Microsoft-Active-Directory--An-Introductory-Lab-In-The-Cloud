@@ -450,14 +450,26 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 </p>
 
 3. Create a new File and paste the contents of the [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it
-* First, open the link above in a new tab which will take you to the Gothub repository.
+* In Powershell, create a new file. (The system automatically put us into a new file when we clicked the down arrow next to Script earlier. If you don't have an empty file ready for a script like the split screen image, click on New Script at the top left. It will look like this when ready: 
+
+<p align="center">
+<img src="https://i.imgur.com/5kKStkh.png" alt="AD Desktop"/>
+</p>
+
+* Hit Ctrl+S to save the file and save it to the Desktop. 
+
+<p align="center">
+<img src="https://i.imgur.com/aSH5sFV.png" alt="AD Desktop"/>
+</p>
+  
+* Next, open the [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)link in a new tab which will take you to the Github repository.
 * Next on the top right of the file, click on the double squares to copy the RAW file. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/tqdnoPe.png" alt="AD Desktop"/>
 </p>
 
-4. Run the script and observe the accounts being created
+4. Paste and Run the script in Powershell ISE and observe the accounts being created
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
