@@ -511,16 +511,22 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 	2. Click Start, and type gpmc.msc in the search box, then press Enter. This opens the Group Policy Management Console.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/mwbVBTQ.png" alt="AD Desktop"/>
 </p>
 
 2. Create or Edit a Group Policy Object (GPO)
-	1. In the GPMC, navigate to the Group Policy Objects section.
-	2. Right-click Group Policy Objects and select New to create a new GPO, or right-click an existing GPO and select Edit to modify it.
+	1. In the GPMC, navigate to the Group Policy Objects section: Forest:mydomain.com > Domains > mydomain.com > Default Domain Policy
+	2. Right-click Group Policy Objects and select New to create a new GPO, or right-click an existing GPO (Default Domain Policy) and select Edit to modify it.
 		* Give the new GPO a descriptive name if you're creating a new one, like "Account Lockout Policy".
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/jpVrXVt.png" alt="AD Desktop"/>
+</p>
+
+* You should now be in the Group Policy Management Editor
+
+<p align="center">
+<img src="https://i.imgur.com/9mBA3o5.png" alt="AD Desktop"/>
 </p>
 
 3. Navigate to the Account Lockout Policy Settings
@@ -528,12 +534,12 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 		* Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/YCCyNqe.png" alt="AD Desktop"/>
 </p>
 
 
 4. Configure Account Lockout Policy Settings
-	* You will see three primary settings that you need to configure:
+	* You will see three primary settings that you need to configure, double click them to change and apply their parameters:
 	1. Account Lockout Duration:
 		* Definition: The time in minutes that an account remains locked before it is automatically unlocked.
 		* Configuration: Double-click on this setting, select Define this policy setting, and then set the duration (e.g., 30 minutes).
@@ -545,7 +551,7 @@ https://apps.apple.com/us/app/windows-app/id1295203466?mt=12
 		* Configuration: Double-click on this setting, select Define this policy setting, and then set the time (e.g., 15 minutes).
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/vK4p5wK.png" alt="AD Desktop"/>
 </p>
 
 5. Link the GPO to an Organizational Unit (OU)
@@ -584,19 +590,19 @@ By following these steps, you can successfully configure an account lockout poli
 # 2. Dealing with Account Lockouts
 
 1. Log into DC-1
-2. Pick a random user account you created previously
+2. Go to Active Directory Users and Computers and pick a random user account you created previously from the _EMPLOYEES file. 
+
+<p align="center">
+<img src="https://i.imgur.com/Dw4A414.png" alt="AD Desktop"/>
+</p>
+
+3. Attempt multiple logins on Client-1 with a bad password to lock the account
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
 </p>
 
-3. Attempt multiple logins with a bad password to lock the account. 
-
-<p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
-</p>
-
-4. Observe that the account has been locked out within Active Directory
+5. Observe that the account has been locked out within Active Directory
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
