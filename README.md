@@ -246,7 +246,7 @@ Let's begin!
 <img src="https://i.imgur.com/B9jB2Ag.png" alt="AD Desktop"/>
 </p>
 
-* Ensure ping has succeeded. If not, you may have provisioned your virtual networks incorrectly in Azure for the VM's, or you have not completely disabled the Firewall on DC-1. You may want to disable all firewalls on each tab of the Windows Defender Firewall Properties if your pings are failing. Disable all firewall settings for the Domain, Private, and Public tabs. Please note that this is for lab purposes only, we would leave these intact and do additional configuring if this were an operational AD instance. Your ping operation should be working. If not, check which Virtual Networks you VM's are on inside Azure. 
+* Ensure ping has succeeded. If not, you may have provisioned your virtual networks incorrectly in Azure for the VM's, or you have not completely disabled the Firewall on DC-1. You may want to disable all firewalls on each tab of the Windows Defender Firewall Properties if your pings are failing. Disable all firewall settings for the Domain, Private, and Public tabs. Please note that this is for lab purposes only, we would leave these intact and do additional configuring if this were an operational AD instance. Your ping operation should be working. If not, check which Virtual Networks your VM's are on inside Azure. 
 
 <p align="center">
 <img src="https://i.imgur.com/zErirYa.png" alt="AD Desktop"/>
