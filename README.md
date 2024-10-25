@@ -64,9 +64,11 @@ In this lab, we are going to stand up an instance of Active Directory using two 
 
 ---
 
-# Important Notes
+# Important Notes and How to Use This Lab
 
-This is a lengthy lab and it's recommended that you tackle one section at a time from the table of contents above. Information here is current as of October of 2024. Azure and Active Directory are constantly changing and being updated by Microsoft. This tutorial is not evergreen, and changes will be made to these platforms which inevitably will not be reflected in the documentation below. You should still be able to generally work out where and how to perform the illustrated functions with help from other resources such as AI, YouTube, direct vendor support, etc. 
+You can jump straight to any section of this lab by clicking its corresponding link in the Table of Contents above. 
+
+This is a lengthy lab and it's recommended that you tackle one section at a time. Information here is current as of October of 2024. Azure and Active Directory are constantly changing and being updated by Microsoft. This tutorial is not evergreen, and changes will be made to these platforms which inevitably will not be reflected in the documentation below. You should still be able to generally work out where and how to perform the illustrated functions with help from other resources such as AI, YouTube, direct vendor support, etc. 
 
 This tutorial does not cover how to use Azure to create an account, tenant (organization), subscription, or log into Azure. It also assumes that you are familiar with how to use Remote Desktop or the Windows App (on Mac) to log into a VM created in Azure. If you do not know how to do this, YouTube has many great resources that will walk you through the process. 
 
