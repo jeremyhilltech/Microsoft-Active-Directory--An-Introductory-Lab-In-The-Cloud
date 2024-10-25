@@ -608,34 +608,44 @@ By following these steps, you can successfully configure an account lockout poli
 <img src="https://i.imgur.com/Dw4A414.png" alt="AD Desktop"/>
 </p>
 
-3. Attempt multiple logins on Client-1 with a bad password to lock the account
+3. Attempt multiple logins on Client-1 with a bad password to lock the account. (More than 5 now that we set the Lockout Policy.)
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/wD7f4MN.png" alt="AD Desktop"/>
 </p>
 
-5. Observe that the account has been locked out within Active Directory
+5. Observe that the account has been locked out on RDP and within Active Directory, and then unlock the account. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/uLgDpzD.png" alt="AD Desktop"/>
 </p>
 
-5. Unlock the account
-
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/i3uzqlW.png" alt="AD Desktop"/>
 </p>
 
-6. Reset the password
+6. You can now log back in with your random user on Client-1 with the correct password. 
+
+6. Password Resets
+* Passwords can be reset simply by right clicking on users inside the ADUC and selecting Reset Password.
+* Note that you can also unlock an account from here when doing a password reset instead of having to navigate into the User properties each time an account is locked. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/dPNdmgx.png" alt="AD Desktop"/>
 </p>
 
-7. Attempt to login with the new password. 
+<p align="center">
+<img src="https://i.imgur.com/IvhL97E.png" alt="AD Desktop"/>
+</p>
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/mGkfuJ9.png" alt="AD Desktop"/>
+</p>
+
+6. Attempt to login with the new password. Success! 
+
+<p align="center">
+<img src="https://i.imgur.com/t0SiSZM.png" alt="AD Desktop"/>
 </p>
 
 ## 3. Enabling and Disabling Accounts
