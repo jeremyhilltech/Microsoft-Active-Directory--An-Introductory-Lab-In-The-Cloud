@@ -39,7 +39,7 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 
 - [Overview: What Is Active Directory](#overview-what-is-active-directory)
 - [What Will We Accomplish?](#what-will-we-accomplish)
-- [Important Notes](#important-notes)
+- [Important Notes](#important-notes-and-how-to-use-this-lab)
 - [Preparing AD Infrastructure in Azure](#preparing-ad-infrastructure-in-azure)
 - [Deploying Active Directory](#deploying-active-directory)
 - [Creating Users with PowerShell](#creating-users-with-powershell)
