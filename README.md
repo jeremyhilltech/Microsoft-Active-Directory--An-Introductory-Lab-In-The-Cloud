@@ -37,6 +37,7 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 - [Deploying Active Directory](#deploying-active-directory)
 - [Creating Users with PowerShell](#creating-users-with-powershell)
 - [Group Policy and Managing Accounts](#group-policy-and-managing-accounts)
+- [Closing Comments](#closing-comments)
 
 ---
 
