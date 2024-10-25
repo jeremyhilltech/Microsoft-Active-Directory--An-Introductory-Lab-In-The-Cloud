@@ -650,33 +650,48 @@ By following these steps, you can successfully configure an account lockout poli
 
 ## 3. Enabling and Disabling Accounts
 
-1. Disable the same account in Active Directory
+1. Disable the same account in Active Directory by going into properties or using the Find function in the ADUC and right clicking the user's name and simply select "Disable Account." You'll notice afterwards that their name is "greyed out" or will have a tiny down arrow next to their icon in the list, this indicates an inactive account on the domain. It can be hard to see. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/McbM6t9.png" alt="AD Desktop"/>
 </p>
 
 2. Attempt to login with it, observe the error message
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/At2qiiO.png" alt="AD Desktop"/>
 </p>
 
 3. Re-enable the account and attempt to login with it.
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/1Fsb5vv.png" alt="AD Desktop"/>
 </p>
+
+<p align="center">
+<img src="https://i.imgur.com/dgHjd66.png" alt="AD Desktop"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/btP7iHB.png" alt="AD Desktop"/>
+</p>
+
 
 ## 4. Observing Logs
 
-1. Observe the logs in the Domain Controller
+1. Observe the logs in the Domain Controller (They will show the failed login attempts, this is useful to see what the user behavior has been like before we go to the problem as the administrator.)
+* Open Event Viewer by typing eventvwr.msc in the search bar.
+* Maximize your window on the left go into Windows Logs > Security. Note in the logs a place where there was an Audit failure for Logon and view the General tab in the bottom. You will see that there is a section called Failure Information, and our reason was Unknown user name or password. These were our failed login attempts with our random user. 
 
 <p align="center">
-<img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/ZvIzmd9.png" alt="AD Desktop"/>
 </p>
 
-2. Observe the logs on the client Machine
+<p align="center">
+<img src="https://i.imgur.com/30iiJyw.png" alt="AD Desktop"/>
+</p>
+
+2. Observe the logs on the client Machine 
 
 <p align="center">
 <img src="https://imgur.com/EPp023Z.png" alt="AD Desktop"/>
