@@ -149,7 +149,7 @@ Let's begin!
 </p>
 
 <p align="center">
-<img src="https://i.imgur.com/QyqU8E7.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/PP8zlfI.png" alt="AD Desktop"/>
 </p>
 
 4. Log into DC-1 via Remote Desktop/Windows App and disable the Windows Firewall (for testing connectivity).
