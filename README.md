@@ -5,14 +5,19 @@
 <h1>Microsoft Active Directory Laboratory</h1>
 This tutorial outlines the prerequisites, installation, basic setup, and management of users in Microsoft Active Directory.<br />
 
-<h2>Video Demonstration</h2>
+<h2>How To Deploy On-premises Active Directory Within Azure Compute</h2>
 
-- ### [YouTube: How To Deploy On-premises Active Directory Within Azure Compute](https://www.youtube.com)
+- ### [YouTube: A Quick Introduction to Active Directory And Context For This Lab](https://www.youtube.com)
+- ### [YouTube: Preparing AD Infrastructure In Azure](https://www.youtube.com)
+- ### [YouTube: Deploying Active Directory](https://www.youtube.com)
+- ### [YouTube: Creating Users With PowerShell](https://www.youtube.com)
+- ### [YouTube: Group Policy And Managing Accounts](https://www.youtube.com)
+- ### [YouTube: Closing Comments And Observations](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Remote Desktop / Windows App (for Mac)
 - Active Directory Domain Services
 - PowerShell
 
