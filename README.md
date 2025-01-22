@@ -131,7 +131,7 @@ Let's begin!
 * Click next to Disks, and next again to the Network blade. 
 
 <p align="center">
-<img src="https://i.imgur.com/XebbkYo.png" alt="AD Desktop"/>
+<img src="https://i.imgur.com/vejR3D3.png" alt="AD Desktop"/>
 </p>
 
 * Select the virtual network we created earlier called "AD-vnet"
