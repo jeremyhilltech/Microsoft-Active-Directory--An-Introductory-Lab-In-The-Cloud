@@ -7,15 +7,6 @@ This tutorial outlines the prerequisites, installation, basic setup, and managem
 
 <h2>How To Deploy On-premises Active Directory Within Azure Compute</h2>
 
-- ### This video series to release in February 2025, check back for updates.
-
-- ### [YouTube: A Quick Introduction to Active Directory And Context For This Lab](https://www.youtube.com)
-- ### [YouTube: Preparing AD Infrastructure In Azure](https://www.youtube.com)
-- ### [YouTube: Deploying Active Directory](https://www.youtube.com)
-- ### [YouTube: Creating Users With PowerShell](https://www.youtube.com)
-- ### [YouTube: Group Policy And Managing Accounts](https://www.youtube.com)
-- ### [YouTube: Closing Comments And Observations](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
