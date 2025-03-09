@@ -5,7 +5,7 @@
 <h1>Microsoft Active Directory - An Introductory Lab In The Cloud</h1>
 This tutorial outlines the prerequisites, installation, basic setup, and management of users in Microsoft Active Directory using compute power on Microsoft's Azure cloud service platform.<br />
 
-<h2>How To Deploy On-premises Active Directory Within Azure Compute</h2>
+<h2>How To Deploy Active Directory Within Azure Compute</h2>
 
 <h2>Environments and Technologies Used</h2>
 
